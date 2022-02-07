@@ -1,4 +1,4 @@
-# votr-fromscratch
+# Votr
 
 Example voting CRUD SQL web app
 
