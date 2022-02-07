@@ -4,29 +4,89 @@
     <meta charset="utf-8" />
     <title>Bootswatch: Darkly</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/custom.min.css" rel="stylesheet" />
+
+    <!-- Bootswatch Darkly + Bootstrap CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/bootswatch_custom.min.css" rel="stylesheet" />
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Votr Database Admin</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor03"
+          aria-controls="navbarColor03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                >Home
+              </a>
+            </li>
+            <a class="nav-link active" href="darkly-reference.html"
+            >Theme Reference</a
+          >
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="users.html">Users</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="polls.html">Polls</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="votes.html">Votes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="payments.html">Payments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="users_polls.html">Users_Polls</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-sm-2"
+              type="text"
+              placeholder="Search"
+            />
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
     <div class="container">
-      <div class="page-header" id="banner">
+      <div class="bs-docs-section clearfix">
         <div class="row">
-          <div class="col-lg-8 col-md-7 col-sm-6">
-            <h1>Darkly</h1>
-            <p class="lead">Flatly in night mode</p>
-          </div>
-          <div class="col-lg-4 col-md-5 col-sm-6">
-            <div class="sponsor">
-              <script
-                async
-                src="https://cdn.carbonads.com/carbon.js?serve=CKYIE23N&placement=bootswatchcom"
-                id="_carbonads_js"
-              ></script>
+          <div class="col-lg-12">
+            <div class="page-header">
+              <h1>Darkly Theme Reference</h1>
+      <p>
+        This is a reference page using the theme from the
+        <a class="link" href="darkly-reference.html">Darkly Bootswatch theme</a
+        >.
+      </p>
+      <p>
+        For further documentation, see the <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" class="link">Bootstrap docs</a>.
+      </p>
+            </div>
+            </div>
             </div>
           </div>
         </div>
       </div>
-
+    </div>
+    <div class="container">
       <!-- Navbar
       ================================================== -->
       <div class="bs-docs-section clearfix">
