@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootswatch Darkly + Bootstrap CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- Votr CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet" />
+
+    <title>Votr - Database Admin</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Votr Database Admin</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor03"
+          aria-controls="navbarColor03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                >Home
+              </a>
+            </li>
+            <a class="nav-link" href="darkly-reference.html"
+            >Theme Reference</a
+          >
+          </li>
+            <li class="nav-item ">
+              <a class="nav-link active" href="users.html">Users</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="polls.html">Polls</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="votes.html">Votes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="payments.html">Payments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="users_polls.html">Users_Polls</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-sm-2"
+              type="text"
+              placeholder="Search"
+            />
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main role="main">
+
+        <div class="container"><h1>Users</h1>
+            <table class="table table-striped table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">user_id</th>
+                  <th scope="col">username</th>
+                  <th scope="col">email_address</th>
+                  <th scope="col">site_permissions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</td>
+                  <td>chonga</td>
+                  <td>chonga@oregonstate.edu</td>
+                  <td>[user, admin, superadmin]</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</td>
+                  <td>Sebastian</td>
+                  <td>allenseb@oregonstate.edu</td>
+                  <td>[user, admin, superadmin]</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</td>
+                  <td>guest</td>
+                  <td>guest@voter.com</td>
+                  <td>[guest]</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</td>
+                  <td>Buddy Holly</td>
+                  <td>guest@voter.com</td>
+                  <td>[guest]</td>
+                </tr>
+              </tbody>
+            </table>
+        
+            <form>
+              <h3>Add New User</h3>
+              <table class="table table-striped table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">user_id</th>
+                    <th scope="col"><label for="users-username" class="form-label">username</label></th>
+                    <th scope="col">email_address</th>
+                    <th scope="col">site_permissions</th>
+                  </tr>
+                  <tbody>
+                    <tr>
+                      <th scope="row"><i>auto incremented</i></td>
+                      <td>
+                        <div class="mb-3">
+                          <label for="users-create-user-username" class="form-label mb-3">username</label>
+                          <input type="text" class="form-control" id="users-create-user-username" aria-describedby="usernameHelp" placeholder="Ex: chonga">
+                          <div id="users-username-help" class="form-text">varchar</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="mb-3">
+                          <label for="users-createuser-email" class="form-label mb-3">email_address</label>
+                          <input type="email" class="form-control" id="users-createuser-email" aria-describedby="emailHelp" placeholder="Ex: chonga@oregonstate.edu">
+                          <div id="users-username-help" class="form-text">varchar</div>
+                        </div>
+                      </td>
+                      <td>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                        <label class="form-check-label" for="flexCheckDefault">
+                          guest
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          user
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          admin
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          superadmin
+                        </label>
+                      </div>
+                      <div id="users-site_permissions-help" class="form-text">set</div>
+                    </td>
+                    </tr>
+                  </tbody>
+              </table>
+        
+              <button type="submit" class="btn btn-primary">Create New User</button>
+            </form>
+        
+        </div>
+        
+        </div>
+        
+        
+            </main>
+
+  </body>
+</html>
